@@ -5,7 +5,7 @@ export default class Cell extends Component {
     super(props)
     this.state = {color: this.props.value}
 
-   } 
+   }
 
 
    clickingEvent = () =>{
