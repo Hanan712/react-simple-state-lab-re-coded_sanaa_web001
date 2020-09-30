@@ -4,7 +4,8 @@ import {pattern2} from './data.js'
 export default class Matrix extends Component {
 
   genRow = (vals) => {
-    return vals.map(val => <div className="cell"><Cell value={val} /></div>)
+    return vals.map((val, index) => <Cell value={val} key={index}/>) // replace me and render a cell component instead!
+
   }
 
   genMatrix = () => {
