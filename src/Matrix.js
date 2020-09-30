@@ -9,7 +9,7 @@ export default class Matrix extends Component {
   }
 
   genMatrix = () => {
-    return this.props.values.map(rowVals => <div className="row">{this.genRow(rowVals)}</div>)
+    return this.props.values.map((rowVals, index) => <div key={index} className="row">{this.genRow(rowVals)}</div>)
   }
   Matrix.defaultProps = {
     values: pattern2
